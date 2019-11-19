@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+service RomanService {
+  rpc SayHello(HelloRequest) returns (HelloResponse);
+}
+
+message HelloRequest { string content = 1; }
+
+message HelloResponse { string content = 1; }

@@ -1,0 +1,14 @@
+version: "2"
+services:
+  romulus:
+    build: "./romulus"
+    ports:
+      - "5000:5000"
+  remus:
+    build: "./remus"
+    ports:
+      - "5001:5000"
+  alexander:
+    build: "./alexander"
+    ports:
+      - "5002:5000"
